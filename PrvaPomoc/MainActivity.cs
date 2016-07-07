@@ -5,13 +5,17 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.Collections.Generic;
+using Android.Media;
 
 namespace PrvaPomoc
 {
     [Activity(Label = "Prva pomoč")]
     public class MainActivity : Activity
     {
-        //int count = 1;
+        //private List<Image> clickableItems;
+        private List<string> clickableItems;
+        private ListView mListView;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -21,18 +25,20 @@ namespace PrvaPomoc
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            //Button button = FindViewById<Button>(Resource.Id.MyButton);
+            mListView = FindViewById<ListView>(Resource.Id.menuList);
 
-            //button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            //ArrayAdapter<Image> adapter = new ArrayAdapter<Image>(this, Android.Resource.Layout.SimpleListItem1, clickableItems);
 
-            //var metrics = Resources.DisplayMetrics;
-            //var widthInPx = metrics.WidthPixels;
-            //var heightInPx = metrics.HeightPixels;
+            clickableItems = new List<string>();
+            clickableItems.Add("PRVA POMOČ");
+            clickableItems.Add("Koliko vem o nudenju prve pomoči?");
+            clickableItems.Add("Zemljevid AED naprav");
+            clickableItems.Add("Pokliči 112");
 
-            //FindViewById<TextView>(Resource.Id.screenWidthDp).Text = "Screen Width: " + widthInPx + " px.";
-            //FindViewById<TextView>(Resource.Id.screenHeightDp).Text = "Screen Height: " + heightInPx + " px.";
+            ArrayAdapter<string> adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, clickableItems);
+
+            mListView.Adapter = adapter;
+
         }
     }
 }

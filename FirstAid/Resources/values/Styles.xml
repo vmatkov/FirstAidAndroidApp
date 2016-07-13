@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="theme_firstaid_background">#ffffffff</color><style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+  <style name="Theme.FirstAid" parent="@android:style/Theme.Material.Settings">
+    <item name="android:windowBackground">?android:attr/colorBackground</item>
+    <item name="android:colorBackground">@color/theme_firstaid_background</item>
+    <item name="android:colorPrimary">#FFF44336</item>
+    <item name="android:colorPrimaryDark">#FFD32F2F</item>
+    <item name="android:colorAccent">#FF536DFE</item>
+    <item name="android:textColorPrimary">#FF212121</item>
+    <item name="android:textColorSecondary">#FF727272</item>
+    <item name="android:colorControlNormal">#FFFFFFFF</item>
+    <item name="android:colorControlActivated">#FF536DFE</item>
+    <item name="android:colorButtonNormal">#FFFFFFFF</item>
+  </style>
+</resources>

@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace PrvaPomoc
+namespace FirstAid
 {
     [Activity(Label = "Prva pomoè", MainLauncher = true, NoHistory = true, Theme = "@style/Theme.Splash", Icon = "@drawable/icon_")]
     public class SplashScreen : Activity

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">FirstAid</string>
+    <string name="ApplicationName">Prva pomoč</string>
+    <string name="menu_one">Nujna medicinska pomoč</string>
+    <string name="menu_two">Koliko vem?</string>
+    <string name="menu_three">Zemljevid AED naprav</string>
+    <string name="ok">OK</string>
 </resources>

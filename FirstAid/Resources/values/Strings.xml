@@ -5,4 +5,5 @@
     <string name="menu_two">Koliko vem?</string>
     <string name="menu_three">Zemljevid AED naprav</string>
     <string name="ok">OK</string>
+    <string name="google_maps_key">AIzaSyA504dAclO7wskwoSnXKE9fpdqxcoJ9M4U</string>
 </resources>

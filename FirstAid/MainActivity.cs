@@ -53,6 +53,9 @@ namespace FirstAid
             // Zemljevid AED naprav po Sloveniji
             Intent intent = new Intent(this, typeof(AED));
             StartActivity(intent);
+            //var geoUri = Android.Net.Uri.Parse("geo:42.374260,-71.120824");
+            //var mapIntent = new Intent(Intent.ActionView, geoUri);
+            //StartActivity(mapIntent);
         }
 
         private void Item4_Click(object sender, EventArgs e)

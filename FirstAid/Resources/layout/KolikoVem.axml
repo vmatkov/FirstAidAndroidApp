@@ -3,13 +3,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-    <TextView
-        android:text="Koliko vem o nudenju prve pomoči?"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_margin="5dp" />
+    android:padding="16dp"
+    android:id="@+id/main_layout">
+  <Button
+      android:id="@+id/myButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Get Location" />
+  <TextView
+      android:id="@+id/label"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Location will go here!" />
 </LinearLayout>

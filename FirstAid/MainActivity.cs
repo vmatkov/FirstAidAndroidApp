@@ -6,6 +6,7 @@ using Android.OS;
 using Android.Support.V4.Content;
 using Android.Support.V4.App;
 using Android.Content.PM;
+using Android;
 
 namespace FirstAid
 {
@@ -13,6 +14,13 @@ namespace FirstAid
     public class MainActivity : Activity
     {
         static readonly int REQUEST_PHONE = 0;
+        static readonly int REQUEST_LOCATION = 1;
+
+        readonly string[] PermissionsLocation =
+        {
+            Manifest.Permission.AccessCoarseLocation,
+            Manifest.Permission.AccessFineLocation
+        };
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -51,11 +59,28 @@ namespace FirstAid
         private void Item3_Click(object sender, EventArgs e)
         {
             // Zemljevid AED naprav po Sloveniji
-            Intent intent = new Intent(this, typeof(AED));
-            StartActivity(intent);
-            //var geoUri = Android.Net.Uri.Parse("geo:42.374260,-71.120824");
-            //var mapIntent = new Intent(Intent.ActionView, geoUri);
-            //StartActivity(mapIntent);
+
+            var permissionCheckOne = ContextCompat.CheckSelfPermission(this, PermissionsLocation[0]);
+            var permissionCheckTwo = ContextCompat.CheckSelfPermission(this, PermissionsLocation[1]);
+
+            if ((int)Build.VERSION.SdkInt >= 23)
+            {
+                if (permissionCheckOne == Permission.Granted && permissionCheckTwo == Permission.Granted)
+                {
+                    Intent intent = new Intent(this, typeof(AED));
+                    StartActivity(intent);
+                }
+                else
+                {
+                    ActivityCompat.RequestPermissions(this, new string[] { PermissionsLocation[0] }, REQUEST_LOCATION);
+                    ActivityCompat.RequestPermissions(this, new string[] { PermissionsLocation[1] }, REQUEST_LOCATION);
+                }
+            }
+            else
+            {
+                Intent intent = new Intent(this, typeof(AED));
+                StartActivity(intent);
+            }
         }
 
         private void Item4_Click(object sender, EventArgs e)
@@ -69,7 +94,7 @@ namespace FirstAid
             {
                 if (permissionCheck != Android.Content.PM.Permission.Granted)
                 {
-                    ActivityCompat.RequestPermissions(this, new String[] { Android.Manifest.Permission.CallPhone }, REQUEST_PHONE);
+                    ActivityCompat.RequestPermissions(this, new string[] { Android.Manifest.Permission.CallPhone }, REQUEST_PHONE);
                 }
                 else
                 {
@@ -97,6 +122,20 @@ namespace FirstAid
                     Intent callIntent = new Intent(Intent.ActionCall);
                     callIntent.SetData(Android.Net.Uri.Parse("tel:112"));
                     StartActivity(callIntent);
+                }
+                else
+                {
+                    Toast.MakeText(this, "Permission required", ToastLength.Long).Show();
+                }
+                return;
+            }
+            else if(requestCode == REQUEST_LOCATION)
+            {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.Length > 0 && grantResults[0] == Permission.Granted)
+                {
+                    Intent intent = new Intent(this, typeof(AED));
+                    StartActivity(intent);
                 }
                 else
                 {

@@ -5,14 +5,29 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:id="@+id/main_layout">
-  <Button
-      android:id="@+id/myButton"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Get Location" />
-  <TextView
-      android:id="@+id/label"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Location will go here!" />
+    <EditText
+        android:hint="Question comes here, does it?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Question" />
+    <EditText
+        android:hint="Answer number one."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Answer1" />
+    <EditText
+        android:hint="Answer number two."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Answer2" />
+    <EditText
+        android:hint="Answer number three."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Answer3" />
+    <EditText
+        android:hint="Answer number four."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Answer4" />
 </LinearLayout>

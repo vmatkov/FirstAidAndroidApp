@@ -45,13 +45,13 @@ namespace FirstAid
         {
             for (var i = 0; i < AedNaprave.Count; i++)
                 mMap.AddMarker(AedNaprave[i]);
-            //for (var i = 0; i < AedNaprave.Count; i++)
-            //{
-            //    if (mMap.Projection.VisibleRegion.LatLngBounds.Contains(AedNaprave[i].Position))
-            //    {
-            //        mMap.AddMarker(AedNaprave[i]);
-            //    }
-            //}
+            for (var i = 0; i < AedNaprave.Count; i++)
+            {
+                if (mMap.Projection.VisibleRegion.LatLngBounds.Contains(AedNaprave[i].Position))
+                {
+                    mMap.AddMarker(AedNaprave[i]);
+                }
+            }
         }
 
         protected void buildGoogleApiClient()

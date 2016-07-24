@@ -25,24 +25,5 @@ namespace FirstAid
             // Create your application here
             SetContentView(Resource.Layout.KolikoVem);
         }
-
-        //TextView textLocation;
-        //Button buttonGetLocation;
-        //View layout;
-        //protected override void OnCreate(Bundle savedInstanceState)
-        //{
-        //    base.OnCreate(savedInstanceState);
-
-        //    SetContentView(Resource.Layout.KolikoVem);
-
-        //    layout = FindViewById<LinearLayout>(Resource.Id.main_layout);
-        //    textLocation = FindViewById<TextView>(Resource.Id.label);
-
-        //    buttonGetLocation = FindViewById<Button>(Resource.Id.myButton);
-
-        //    buttonGetLocation.Click += async (sender, e) => await TryGetLocationAsync();
-        //}
-
-
     }
 }

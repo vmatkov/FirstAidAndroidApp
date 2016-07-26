@@ -143,17 +143,16 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="NujnaPomoc.cs" />
-    <Compile Include="Resources\DataHelper\DataBase.cs" />
-    <Compile Include="Resources\ListViewAdapter.cs" />
     <Compile Include="Resources\Model\Question.cs" />
+    <Compile Include="Resources\Model\QuestionParser.cs" />
+    <Compile Include="Resources\Model\QuestionsListViewAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashScreen.cs" />
-    <Compile Include="SQLite.cs" />
-    <Compile Include="SQLiteAsync.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AedJson.json" />
+    <AndroidAsset Include="Assets\Questions.json" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
@@ -167,6 +166,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AED.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\answerRow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

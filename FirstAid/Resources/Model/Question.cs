@@ -17,9 +17,20 @@ namespace FirstAid.Resources.Model
         public int Id { get; set; }
 
         public string question { get; set; }
-        public string answer1 { get; set; }
-        public string answer2 { get; set; }
-        public string answer3 { get; set; }
-        public string answer4 { get; set; }
+        public List<string> answers { get; set; }
+        public List<int> correct { get; set; }
+
+        public Question() { }
+
+        public Question(int id, string q, List<string> a, List<int> c)
+        {
+            Id = id;
+            question = q;
+            answers = a;
+            correct = c;
+        }
+
+        ~Question() { }
+
     }
 }

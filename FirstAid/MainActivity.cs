@@ -7,12 +7,20 @@ using Android.Support.V4.Content;
 using Android.Support.V4.App;
 using Android.Content.PM;
 using Android;
+using Android.Gms.Maps.Model;
+using System.Collections.Generic;
+using Android.Content.Res;
+using System.IO;
+using FirstAid.Resources.Model;
 
 namespace FirstAid
 {
     [Activity(Label = "@string/ApplicationName")]
     public class MainActivity : Activity
     {
+        public static List<MarkerOptions> AedMarkers;
+        public static List<Question> Questions;
+
         static readonly int REQUEST_PHONE = 0;
         static readonly int REQUEST_LOCATION = 1;
 
@@ -29,6 +37,26 @@ namespace FirstAid
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
+            //AED Markers from JSON
+            string json;
+            AssetManager assets = this.Assets;
+            using (var streamReader = new StreamReader(assets.Open("AedJson.json")))
+            {
+                json = streamReader.ReadToEnd();
+            }
+
+            AedMarkers = AedParser.GetAedLocations(json);
+
+            //Questions and answers from JSON
+            string qJson;
+            AssetManager qAssets = this.Assets;
+            using (var streamReader = new StreamReader(qAssets.Open("Questions.json")))
+            {
+                qJson = streamReader.ReadToEnd();
+            }
+
+            Questions = QuestionParser.ParseJsonData(qJson);
 
             var Item1 = FindViewById<ImageView>(Resource.Id.MaterialItem1);
             var Item2 = FindViewById<ImageView>(Resource.Id.MaterialItem2);
@@ -125,7 +153,7 @@ namespace FirstAid
                 }
                 else
                 {
-                    Toast.MakeText(this, "Permission required", ToastLength.Long).Show();
+                    Toast.MakeText(this, "Za dostop je potrebno dovoljenje.", ToastLength.Long).Show();
                 }
                 return;
             }
@@ -139,7 +167,7 @@ namespace FirstAid
                 }
                 else
                 {
-                    Toast.MakeText(this, "Permission required", ToastLength.Long).Show();
+                    Toast.MakeText(this, "Za dostop je potrebno dovoljenje.", ToastLength.Long).Show();
                 }
                 return;
             }

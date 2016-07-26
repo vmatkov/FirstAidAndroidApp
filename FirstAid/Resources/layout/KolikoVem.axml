@@ -5,29 +5,20 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:id="@+id/main_layout">
-    <EditText
+    <TextView
         android:hint="Question comes here, does it?"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Question" />
-    <EditText
-        android:hint="Answer number one."
+        android:id="@+id/textQuestion"
+        android:textSize="18dp" />
+    <ListView
+        android:id="@+id/answersList"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Answer1" />
-    <EditText
-        android:hint="Answer number two."
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Answer2" />
-    <EditText
-        android:hint="Answer number three."
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Answer3" />
-    <EditText
-        android:hint="Answer number four."
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Answer4" />
+        android:padding="5dp"
+        android:text="Potrdi" />
 </LinearLayout>

@@ -31,7 +31,7 @@ namespace FirstAid
         protected GoogleApiClient mGoogleApiClient;
         protected LocationRequest mLocationRequest;
         protected bool mRequestingLocationUpdates;
-        public List<MarkerOptions> markers;
+        private List<MarkerOptions> markers;
 
         const int RequestLocationId = 0;
 
@@ -56,7 +56,7 @@ namespace FirstAid
 
         protected void buildGoogleApiClient()
         {
-            Toast.MakeText(this, "Building GoogleApiClient", ToastLength.Short).Show();
+            Toast.MakeText(this, "Google Api Client se vzpostavlja.", ToastLength.Long).Show();
             mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .AddConnectionCallbacks(this)
                     .AddOnConnectionFailedListener(this)
@@ -93,15 +93,6 @@ namespace FirstAid
                 CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(SLO, 10);
                 mMap.MoveCamera(camera);
             }
-
-            string json;
-            AssetManager assets = this.Assets;
-            using (var streamReader = new StreamReader(assets.Open("AedJson.json")))
-            {
-                json = streamReader.ReadToEnd();
-            }
-
-            markers = AedParser.GetAedLocations(json);
         }
 
         private void UpdateUI()
@@ -124,6 +115,8 @@ namespace FirstAid
 
             // Create your application here
             SetContentView(Resource.Layout.AED);
+
+            markers = MainActivity.AedMarkers;
 
             mRequestingLocationUpdates = false;
             buildGoogleApiClient();
@@ -228,13 +221,13 @@ namespace FirstAid
 
         public void OnConnectionSuspended(int cause)
         {
-            Toast.MakeText(this, "Connection susspended.", ToastLength.Long).Show();
+            Toast.MakeText(this, "Povezava prekinjena.", ToastLength.Long).Show();
             mGoogleApiClient.Connect();
         }
 
         public void OnConnectionFailed(ConnectionResult result)
         {
-            Toast.MakeText(this, "Connection failed: ConnectionResult.getErrorCode() = " + result.ErrorCode.ToString(), ToastLength.Long).Show();
+            Toast.MakeText(this, "Povezava ni uspela: ConnectionResult.getErrorCode() = " + result.ErrorCode.ToString(), ToastLength.Long).Show();
         }
     }
 }

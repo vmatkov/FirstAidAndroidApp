@@ -1,17 +1,7 @@
 using Android.App;
 using Android.Widget;
 using Android.OS;
-using Android.Support.V7.App;
-using System.Threading.Tasks;
-using Android;
-using Android.Support.V4.Content;
-using AlertDialog = Android.Support.V7.App.AlertDialog;
-using Plugin.Geolocator;
 using System;
-using Android.Content.PM;
-using Android.Views;
-using Android.Support.Design.Widget;
-using Android.Support.V4.App;
 using System.Collections.Generic;
 using FirstAid.Resources.Model;
 

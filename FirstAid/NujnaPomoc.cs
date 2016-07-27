@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using FirstAid.Resources.Model;
+using FirstAid.Resources.FirstAidActivities;
 
 namespace FirstAid
 {
@@ -43,7 +44,108 @@ namespace FirstAid
 
         private void FirstAidList_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Long).Show();
+            if(e.Position == 0)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(NegibnaOseba));
+                StartActivity(intent);
+            }
+            else if (e.Position == 1)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(SrcnaKap));
+                StartActivity(intent);
+            }
+            else if (e.Position == 2)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(MozganskaKap));
+                StartActivity(intent);
+            }
+            else if (e.Position == 3)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(Dusenje));
+                StartActivity(intent);
+            }
+            else if (e.Position == 4)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(HudeKrvavitve));
+                StartActivity(intent);
+            }
+            else if (e.Position == 5)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(AlergicniNapad));
+                StartActivity(intent);
+            }
+            else if (e.Position == 6)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(AmputiranPrst));
+                StartActivity(intent);
+            }
+            else if (e.Position == 7)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(EpilepticniNapad));
+                StartActivity(intent);
+            }
+            else if (e.Position == 8)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(OpeklinskeRane));
+                StartActivity(intent);
+            }
+            else if (e.Position == 9)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(PoskodbaGlave));
+                StartActivity(intent);
+            }
+            else if (e.Position == 10)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(PoskodbaHrbtenice));
+                StartActivity(intent);
+            }
+            else if (e.Position == 11)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(Rane));
+                StartActivity(intent);
+            }
+            else if (e.Position == 12)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(SladkornaBolezen));
+                StartActivity(intent);
+            }
+            else if (e.Position == 13)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(Zastrupitev));
+                StartActivity(intent);
+            }
+            else if (e.Position == 14)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(ZlomNoge));
+                StartActivity(intent);
+            }
+            else if (e.Position == 15)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(ZlomRoke));
+                StartActivity(intent);
+            }
+            else if (e.Position == 16)
+            {
+                Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
+                Intent intent = new Intent(this, typeof(ZviniIzpahi));
+                StartActivity(intent);
+            }
         }
     }
 }

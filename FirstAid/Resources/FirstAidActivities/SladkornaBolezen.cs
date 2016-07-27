@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace FirstAid.Resources.FirstAidActivities
 {
-    [Activity(Label = "SladkornaBolezen")]
+    [Activity(Label = "Sladkorna bolezen")]
     public class SladkornaBolezen : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

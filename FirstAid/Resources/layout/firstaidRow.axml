@@ -5,10 +5,16 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <CheckBox
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
+        android:id="@+id/firstaidItem"
         android:padding="5dp"
-        android:id="@+id/txt_lan" />
+        android:drawableLeft="@drawable/firstAidIcon"
+        android:drawablePadding="5dp"
+        android:textSize="16dp"
+        android:height="50dp"
+        android:gravity="center|left"
+        android:text="sample"
+        android:textStyle="normal" />
 </LinearLayout>

@@ -19,7 +19,7 @@ namespace FirstAid
         {
             base.OnCreate(savedInstanceState);
 
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             StartActivity(typeof(MainActivity));
         }
     }

@@ -12,14 +12,15 @@ using Android.Widget;
 
 namespace FirstAid.Resources.FirstAidActivities
 {
-    [Activity(Label = "Alergièni napad")]
-    public class AlergicniNapad : Activity
+    [Activity(Label = "Napad panike")]
+    public class NapadPanike : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.AlergicniNapad);
+            // Create your application here
+            SetContentView(Resource.Layout.NapadPanike);
         }
     }
 }

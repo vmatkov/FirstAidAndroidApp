@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="horizontal"
+    android:id="@+id/ScrollView">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/zvinjGleznja"
+            android:scaleType="fitCenter"
+            android:id="@+id/zvini" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFB6B6B6" />
+        <TextView
+            android:text="1. Oseba mora takoj prenehati z aktivnostjo. Poškodovani del telesa mora mirovati."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="2. Takoj poskrbimo za hlajenje izvinjenega mesta. Hladilnih sredstev nikoli ne polagamo neposredno na kožo. S tem zmanjšamo nastanek otekline in zmanjšamo bolečino."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="3. Namestimo obvezo."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="4. Prizadet del telesa dvignemo v višjo lego, kadar je to le mogoče."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="5. Poškodovanca napotimo k zdravniku ali pokličemo 112, odvisno od poškodbe."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</ScrollView>

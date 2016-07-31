@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace FirstAid.Resources.FirstAidActivities
 {
-    [Activity(Label = "Rane")]
+    [Activity(Label = "Oskrba ran")]
     public class Rane : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -20,6 +20,7 @@ namespace FirstAid.Resources.FirstAidActivities
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+            SetContentView(Resource.Layout.OskrbaRan);
         }
     }
 }

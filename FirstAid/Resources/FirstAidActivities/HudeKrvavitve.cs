@@ -20,6 +20,7 @@ namespace FirstAid.Resources.FirstAidActivities
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+            SetContentView(Resource.Layout.HudeKrvavitve);
         }
     }
 }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="horizontal"
+    android:id="@+id/ScrollView">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/amputiranPrst"
+            android:scaleType="fitCenter"
+            android:id="@+id/amputiranPrst" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFB6B6B6" />
+        <TextView
+            android:text="1. Nadenemo si rokavice za enkratno uporabo."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="2. S kompresijsko obvezo oskrbimo rano, če to ni mogoče tkanino pritiskamo na rano da zaustavimo krvavitev."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="3. Amputiran prst ustrezno oskrbimo : prst zavijemo z gazo in ga položimo v plastično vrečko, napolnimo še drugo vrečko z ledom in vodo. Vse skupaj damo v tretjo vrečko."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="4. Amputiranega prsta ne dajamo direktno na led!"
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="5. Poskrbimo za čimprejšnjo zdravniško pomoč ali pokličemo na 112."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</ScrollView>

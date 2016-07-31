@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="horizontal"
+    android:id="@+id/ScrollView">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/srcniInfarkt"
+            android:scaleType="fitCenter"
+            android:id="@+id/srcniInfarkt" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFB6B6B6" />
+        <TextView
+            android:text="1. Klic v sili na številko 112."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="2. Če je prizadet pri zavesti, ga udobno namestimo v pol sedeč položaj."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="3. Razpnemu mo ozka oblačila in če ima oseba v bližini zdravila, mu jih pomagamo vzeti."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="4. Z prizadetim počakamo na reševalce."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</ScrollView>

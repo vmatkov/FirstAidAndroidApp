@@ -9,35 +9,45 @@
         android:orientation="vertical"
         android:id="@+id/linearLayout1"
         android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/zlomNoge"
+            android:scaleType="fitCenter"
+            android:id="@+id/zlomNoge" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFB6B6B6" />
         <TextView
-            android:text="Text 1"
+            android:text="1. V primeru zloma ali suma zloma noge, takoj pokličemo na številko 112."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="60dp"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
         <TextView
-            android:text="Text 2"
+            android:text="2. Če je mogoče, pustimo zlomljeno nogo v prvotnem položaju, noge ne premikamo, predvsem pri zlomih nad kolenom."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="70dp"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
         <TextView
-            android:text="Text 3"
+            android:text="3. Do prihoda reševalcev poškodovanca nadzorujemo in ga mirimo."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="50dp"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
         <TextView
-            android:text="Text 4"
+            android:text="4. Pri zaprtih zlomih, lahko na poškodovano mesto previdno polagamo hladne obkladke."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="50dp"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />

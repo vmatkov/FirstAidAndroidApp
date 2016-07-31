@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="horizontal"
+    android:id="@+id/ScrollView">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/poskodbaHrbtenice"
+            android:scaleType="fitCenter"
+            android:id="@+id/poskodbaHrbtenice" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFB6B6B6" />
+        <TextView
+            android:text="1. Namestite glavo poškodovanega z obema rokama, da preprečite morebitne premike. Če ste sami, lahko glavo namestite tudi med koleni."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="2. Pokličite številko 112."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="3. Če niste prepričani, da je poškodovana hrbtenica, vseeno ravnajte v skladu s pravili poškodbe hrbtenice."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="4. Če je oseba nezavestna, ima reševanje življenja prednost pred poškodbo hrbtenice, in zato osebo namestimo na bok."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="horizontal"
+    android:id="@+id/ScrollView">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/zlomRoke"
+            android:scaleType="fitCenter"
+            android:id="@+id/zlomRoke" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFB6B6B6" />
+        <TextView
+            android:text="1. Poškodovanec mora roko pridržati in jo dati ob telo."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="2. Trikotno ruto previdno previdno položimo pod poškodovanco roko in en konec potegnemo do višine rame."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="3. Oba konca rute zvežemo v vozel nad nepoškodovanim ramenom. Z imobilizacijo dosežemo, da poškodovani del telesa miruje v najugodnejšem položaju."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="4. Čim prej poiščite zdravniško pomoč, ali pokličite na številko 112."
+            android:textColor="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/Card1"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</ScrollView>

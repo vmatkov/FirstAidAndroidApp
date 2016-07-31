@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace FirstAid.Resources.FirstAidActivities
 {
-    [Activity(Label = "Srèna kap")]
+    [Activity(Label = "Srèni infarkt")]
     public class SrcnaKap : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -20,6 +20,7 @@ namespace FirstAid.Resources.FirstAidActivities
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+            SetContentView(Resource.Layout.SrcniInfarkt);
         }
     }
 }

@@ -30,9 +30,9 @@ namespace FirstAid
             firstAidList = FindViewById<ListView>(Resource.Id.firstAidListView);
             firstAidEvents = new List<string>
             {
-                "NEGIBNA OSEBA", "SRÈNA KAP", "MOŽGANSKA KAP", "DUŠENJE", "HUDE KRVAVITVE", "ALERGIÈNI NAPAD", "AMPUTIRAN PRST", "EPILEPTIÈNI NAPAD",
+                "NEGIBNA OSEBA", "SRÈNI INFARKT", "MOŽGANSKA KAP", "DUŠENJE", "HUDE KRVAVITVE", "AMPUTIRAN PRST", "EPILEPTIÈNI NAPAD",
                 "OPEKLNISKE RANE", "POŠKODBE GLAVE", "POŠKODBE HRBTENICE", "RANE", "SLADKORNA BOLEZEN", "ZASTRUPITEV", "ZLOM NOGE", "ZLOM ROKE",
-                "ZVINI IN IZPAHI"
+                "ZVINI IN IZPAHI", "NAPAD PANIKE"
             };
 
             FirstAidListViewAdapter adapter = new FirstAidListViewAdapter(this, firstAidEvents);
@@ -77,73 +77,73 @@ namespace FirstAid
             else if (e.Position == 5)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(AlergicniNapad));
+                Intent intent = new Intent(this, typeof(AmputiranPrst));
                 StartActivity(intent);
             }
             else if (e.Position == 6)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(AmputiranPrst));
+                Intent intent = new Intent(this, typeof(EpilepticniNapad));
                 StartActivity(intent);
             }
             else if (e.Position == 7)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(EpilepticniNapad));
+                Intent intent = new Intent(this, typeof(OpeklinskeRane));
                 StartActivity(intent);
             }
             else if (e.Position == 8)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(OpeklinskeRane));
+                Intent intent = new Intent(this, typeof(PoskodbaGlave));
                 StartActivity(intent);
             }
             else if (e.Position == 9)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(PoskodbaGlave));
+                Intent intent = new Intent(this, typeof(PoskodbaHrbtenice));
                 StartActivity(intent);
             }
             else if (e.Position == 10)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(PoskodbaHrbtenice));
+                Intent intent = new Intent(this, typeof(Rane));
                 StartActivity(intent);
             }
             else if (e.Position == 11)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(Rane));
+                Intent intent = new Intent(this, typeof(SladkornaBolezen));
                 StartActivity(intent);
             }
             else if (e.Position == 12)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(SladkornaBolezen));
+                Intent intent = new Intent(this, typeof(Zastrupitev));
                 StartActivity(intent);
             }
             else if (e.Position == 13)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(Zastrupitev));
+                Intent intent = new Intent(this, typeof(ZlomNoge));
                 StartActivity(intent);
             }
             else if (e.Position == 14)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(ZlomNoge));
+                Intent intent = new Intent(this, typeof(ZlomRoke));
                 StartActivity(intent);
             }
             else if (e.Position == 15)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(ZlomRoke));
+                Intent intent = new Intent(this, typeof(ZviniIzpahi));
                 StartActivity(intent);
             }
             else if (e.Position == 16)
             {
                 Toast.MakeText(this, firstAidEvents[e.Position], ToastLength.Short).Show();
-                Intent intent = new Intent(this, typeof(ZviniIzpahi));
+                Intent intent = new Intent(this, typeof(NapadPanike));
                 StartActivity(intent);
             }
         }

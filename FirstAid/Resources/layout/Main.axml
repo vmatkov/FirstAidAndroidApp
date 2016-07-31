@@ -9,7 +9,7 @@
         android:layout_weight="25"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/MaterialMenu1b"
+        android:src="@drawable/MaterialMenu1a"
         android:clickable="true"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"

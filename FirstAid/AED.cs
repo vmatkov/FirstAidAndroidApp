@@ -12,6 +12,7 @@ using Android.Locations;
 using Android.Gms.Common.Apis;
 using Android.Gms.Common;
 using Android.Widget;
+using Android.Views;
 
 namespace FirstAid
 {
@@ -109,12 +110,28 @@ namespace FirstAid
             // Create your application here
             SetContentView(Resource.Layout.AED);
 
+            ActionBar actionBar = ActionBar;
+            actionBar.SetDisplayHomeAsUpEnabled(true);
+
             markers = MainActivity.AedMarkers;
 
             mRequestingLocationUpdates = false;
             buildGoogleApiClient();
 
             SetUpMap();
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    Finish();
+                    return true;
+
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
         }
 
         private void SetUpMap()

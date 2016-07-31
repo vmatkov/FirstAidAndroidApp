@@ -4,6 +4,7 @@ using Android.OS;
 using System;
 using System.Collections.Generic;
 using FirstAid.Resources.Model;
+using Android.Views;
 
 namespace FirstAid
 {
@@ -26,6 +27,9 @@ namespace FirstAid
             // Create your application here
             SetContentView(Resource.Layout.KolikoVem);
 
+            ActionBar actionBar = ActionBar;
+            actionBar.SetDisplayHomeAsUpEnabled(true);
+
             questionTextView = FindViewById<TextView>(Resource.Id.textQuestion);
             listView = FindViewById<ListView>(Resource.Id.answersList);
             Confirm = FindViewById<Button>(Resource.Id.confirm);
@@ -42,6 +46,19 @@ namespace FirstAid
             correctAnswers = listSource[id].correct;
 
             Confirm.Click += Confirm_Click;
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    Finish();
+                    return true;
+
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
         }
 
         public static void CheckAnswer_Click(object sender, EventArgs e)

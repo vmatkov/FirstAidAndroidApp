@@ -21,6 +21,28 @@ namespace FirstAid.Resources.FirstAidActivities
 
             // Create your application here
             SetContentView(Resource.Layout.OskrbaRan);
+
+            ActionBar actionBar = ActionBar;
+            actionBar.SetDisplayHomeAsUpEnabled(true);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    Finish();
+                    return true;
+
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
+        }
+
+        public override void OnBackPressed()
+        {
+            Finish();
+            base.OnBackPressed();
         }
     }
 }

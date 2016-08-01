@@ -12,7 +12,6 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:src="@drawable/dusenje"
             android:scaleType="fitCenter"
             android:id="@+id/dusenje" />
         <View
@@ -23,7 +22,7 @@
             android:text="1. Osebo nagnemo naprej in jo petkrat močno udarimo med lopatici."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -31,7 +30,7 @@
             android:text="2. Izvedimo do 5 stiskov Heimlichovega prijema. Stiski med popkom in žličko."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -39,7 +38,7 @@
             android:text="3. Ponavljajte dokler se zapora ne sprosti. Če oseba izgubi zavest, začnite z oživljanjem."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />

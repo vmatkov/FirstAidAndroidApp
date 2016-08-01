@@ -23,7 +23,7 @@
             android:text="1. Nadenemo si rokavice za enkratno uporabo."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -31,7 +31,7 @@
             android:text="2. S kompresijsko obvezo oskrbimo rano, če to ni mogoče tkanino pritiskamo na rano da zaustavimo krvavitev."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -39,7 +39,7 @@
             android:text="3. Amputiran prst ustrezno oskrbimo : prst zavijemo z gazo in ga položimo v plastično vrečko, napolnimo še drugo vrečko z ledom in vodo. Vse skupaj damo v tretjo vrečko."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -47,7 +47,7 @@
             android:text="4. Amputiranega prsta ne dajamo direktno na led!"
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -55,7 +55,7 @@
             android:text="5. Poskrbimo za čimprejšnjo zdravniško pomoč ali pokličemo na 112."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />

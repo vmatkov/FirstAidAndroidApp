@@ -8,7 +8,7 @@ using Plugin.CurrentActivity;
 namespace FirstAid
 {
 	//You can specify additional application information in this attribute
-    [Application(Theme = "@style/Theme.FirstAid")]
+    [Application(Theme = "@style/Theme.FirstAid", LargeHeap = true)]
     public class MainApplication : Application, Application.IActivityLifecycleCallbacks
     {
         public MainApplication(IntPtr handle, JniHandleOwnership transer)

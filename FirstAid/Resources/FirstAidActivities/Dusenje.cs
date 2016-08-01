@@ -22,6 +22,8 @@ namespace FirstAid.Resources.FirstAidActivities
             // Create your application here
             SetContentView(Resource.Layout.Dusenje);
 
+            NujnaPomoc.loadImage(this, Resource.Id.dusenje, Resource.Drawable.dusenje);
+
             ActionBar actionBar = ActionBar;
             actionBar.SetDisplayHomeAsUpEnabled(true);
         }
@@ -41,6 +43,7 @@ namespace FirstAid.Resources.FirstAidActivities
 
         public override void OnBackPressed()
         {
+            NujnaPomoc.unloadImage(this, Resource.Id.dusenje);
             Finish();
             base.OnBackPressed();
         }

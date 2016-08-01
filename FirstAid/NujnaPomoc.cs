@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using FirstAid.Resources.Model;
 using FirstAid.Resources.FirstAidActivities;
+using Android.Gms.Maps.Model;
 
 namespace FirstAid
 {
@@ -56,6 +57,18 @@ namespace FirstAid
                 default:
                     return base.OnOptionsItemSelected(item);
             }
+        }
+
+        public static void loadImage(Activity a, int id, int image)
+        {
+            ImageView imgView = a.FindViewById<ImageView>(id);
+            imgView.SetImageResource(image);
+        }
+
+        public static void unloadImage(Activity a, int id)
+        {
+            ImageView imgView = a.FindViewById<ImageView>(id);
+            imgView.SetImageResource(0);
         }
 
         private void FirstAidList_ItemClick(object sender, AdapterView.ItemClickEventArgs e)

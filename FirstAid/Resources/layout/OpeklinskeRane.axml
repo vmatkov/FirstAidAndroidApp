@@ -12,7 +12,6 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:src="@drawable/opeklinskeRane"
             android:scaleType="fitCenter"
             android:id="@+id/opeklinskeRane" />
         <View
@@ -23,7 +22,7 @@
             android:text="1. Opeklinsko rano hladimo pod hladno vodo 10 do 15 min."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -31,7 +30,7 @@
             android:text="2. Na opekline položimo aluplast ali sterilno gazo in opeklino obvežemo. Če je opečen obraz, ga ne obvezujemo."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -39,7 +38,7 @@
             android:text="3. Obvezano roko damo v trikotno ruto."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -47,7 +46,7 @@
             android:text="4. Opeklinskih mehurjev ne smemo predirati!"
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
@@ -55,7 +54,7 @@
             android:text="5. Pokličemo nujno medicinsko pomoč na številko 112."
             android:textColor="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:padding="5dp"
             android:background="@drawable/Card1"
             android:layout_margin="5dp" />
